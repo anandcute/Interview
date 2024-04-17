@@ -36,7 +36,7 @@ public class ExceptionDemo {
             try{
             int a=5;
             int b=0;
-            //int c=0;
+            //int c=0;  
             if (b==0) {
                 throw new ArithmeticException("The value of dr.should not be zero");
                 
