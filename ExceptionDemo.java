@@ -28,7 +28,7 @@ public class ExceptionDemo {
             System.out.println("this is finally");
            }
            System.out.println("end");
-           System.out.println("************************\n")
+           System.out.println("************************\n");
         }
         void arithMetic(){
             System.out.println("Start");
@@ -54,7 +54,7 @@ public class ExceptionDemo {
            finally{
               System.out.println("This is finally");
             }
-            System.out.println(" value of c " + c);
+            System.out.println(" value of c: " + c);
             System.out.println("end");
             System.out.println("************************\n");
         }
@@ -84,9 +84,9 @@ public class ExceptionDemo {
     public static void main(String[] args) {
         
         ExceptionDemo ex=new ExceptionDemo();
-        ex.arrayDemo();
+        //ex.arrayDemo();
         ex.arithMetic();
-        ex.nullPointer();
+        //ex.nullPointer();
         
 
         

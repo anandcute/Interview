@@ -19,7 +19,7 @@ class Sample{
 class ObjDemo implements Comparator<Sample>
 {
     public int compare(Sample o1 , Sample o2){
-        return o2.rollno.compareTo(o2.rollno);
+        return o2.rollno.compareTo(o1.rollno);
     }
 }
 
