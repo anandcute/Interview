@@ -22,9 +22,10 @@ class ArraySort extends ArrayReverse{
                     arr[j]=temp;
                 }
 
+                System.out.println(Arrays.toString(arr));
             }
+            System.out.println("***********************");
         }
-        System.out.println(Arrays.toString(arr));
         System.out.println("Acessnding order");
         for (int i = 0; i < arr.length; i++){
             for (int j =0; j < arr.length; j++){
@@ -33,11 +34,11 @@ class ArraySort extends ArrayReverse{
                     arr[i]=arr[j];
                     arr[j]=temp;
                 }
-
+                
             }
         }
         System.out.println(Arrays.toString(arr));
-           
+     
 
     }
 }
