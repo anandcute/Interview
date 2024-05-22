@@ -114,13 +114,37 @@ class ListDemo extends SetDemo{
        System.out.println("----------------END--------------------");
   } 
   static void linkedListDemo(){
-    List list =new LinkedList();
+    LinkedList list =new LinkedList();
     list.add(12);  //add()
     list.add("Anand");
     list.add(223.08);
     list.add(true);
     list.add('D');
     System.out.println("List of Arrays :"+list);
+    //addFirst
+    list.addFirst(19);
+    System.out.println("New value added : "+list);
+    //addLast()
+    list.addLast(20);
+    System.out.println("New value added : "+list);
+    //removeFirst
+    list.removeFirst();
+    System.out.println("remove first value: "+list);
+    //removeLast
+    list.removeLast();
+    System.out.println("remove last value: "+list);
+    //peekFirst
+    System.out.println("peek first value: "+list.peekFirst());
+    //peekLast
+    System.out.println("peek last value: "+list.peekLast());
+    //pollFirst
+    System.out.println("poll first value: "+list.pollFirst());
+    //polllast
+    System.out.println("poll last value: "+list.pollLast());
+    //getFirst
+    System.out.println("get first value: "+list.getFirst());
+    //getLast
+    System.out.println("get last value: "+list.getLast());
     System.out.println("length is " + list.size());
     list.add(1,100);
     System.out.println("new array "+ list);
@@ -136,7 +160,7 @@ class ListDemo extends SetDemo{
     System.out.println(list);
     System.out.println(list.contains("Anand")); //contins() are only boolean type (the given value present in array means its true or its false )
     System.out.println(list.contains("Kumar"));
-    System.out.println(list.get(4)); // get() la ena index  value tharamo atha value print agum
+    System.out.println("get value : " + list.get(1)); // get() la ena index  value tharamo atha value print agum
     System.out.println(list.set(2, "ak")); // set() and add() are same  but set la index value koduthu add pandrom
     System.out.println("list is : " + list);
     //addAll()
@@ -147,6 +171,8 @@ class ListDemo extends SetDemo{
     System.out.println(li.isEmpty());
     li.clear(); //clear() all the collection
     System.out.println(li.isEmpty());
+    
+   
     System.out.println("----------------END--------------------");
   }
 }
@@ -240,14 +266,14 @@ public class CollectionDemo {
     public static void main(String[] args) {
       
       MapDemo sd = new MapDemo();
-      sd.arrayListDemo();
+      // sd.arrayListDemo();
       sd.linkedListDemo();
-      sd.hashSetDemo();
-      sd.linkedHashSet();
-      sd.treeSet();
-      sd.hashMap();
-      sd.linkedHashMap();
-      sd.treeMap();
+      // sd.hashSetDemo();
+      // sd.linkedHashSet();
+      // sd.treeSet();
+      // sd.hashMap();
+      //sd.linkedHashMap();
+     // sd.treeMap();
        
     }
 }
