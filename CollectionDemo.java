@@ -3,6 +3,8 @@
   * ArrayList       * Haashset
   * LinkedList      * LinkedHashSet and *TreeSet   */
 import java.util.ArrayList;
+import java.util.List;
+import java.util.LinkedList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -109,10 +111,43 @@ class ListDemo extends SetDemo{
        System.out.println(li.isEmpty());
        li.clear(); //clear() all the collection
        System.out.println(li.isEmpty());
-    
+       System.out.println("----------------END--------------------");
   } 
   static void linkedListDemo(){
-
+    List list =new LinkedList();
+    list.add(12);  //add()
+    list.add("Anand");
+    list.add(223.08);
+    list.add(true);
+    list.add('D');
+    System.out.println("List of Arrays :"+list);
+    System.out.println("length is " + list.size());
+    list.add(1,100);
+    System.out.println("new array "+ list);
+    list.remove(1);
+    System.out.println("Remove"+list);
+    list.add(1,100);
+    list.add(100);
+    System.out.println(list);
+    int pos1 =list.indexOf(100); 
+    int pos =list.lastIndexOf(100);  //postion value remove
+    list.remove(pos);
+    list.remove(pos1); //remove()
+    System.out.println(list);
+    System.out.println(list.contains("Anand")); //contins() are only boolean type (the given value present in array means its true or its false )
+    System.out.println(list.contains("Kumar"));
+    System.out.println(list.get(4)); // get() la ena index  value tharamo atha value print agum
+    System.out.println(list.set(2, "ak")); // set() and add() are same  but set la index value koduthu add pandrom
+    System.out.println("list is : " + list);
+    //addAll()
+    List  li =new LinkedList<>(Arrays.asList(4,5,3,2,1));
+    li.addAll(list);
+    System.out.println(li);
+    //isEmpty true or false
+    System.out.println(li.isEmpty());
+    li.clear(); //clear() all the collection
+    System.out.println(li.isEmpty());
+    System.out.println("----------------END--------------------");
   }
 }
 class MapDemo extends ListDemo {
@@ -142,7 +177,11 @@ class MapDemo extends ListDemo {
     //entry set 
     Set s1 = m.entrySet();
     System.out.println("entry set : " + s1);
-
+    //contains
+    System.out.println(m.containsKey("Anand"));
+    System.out.println(m.containsValue(22));
+    
+    System.out.println("----------------END--------------------");
   }
   public void treeMap(){
     Map m =new TreeMap();
@@ -165,7 +204,7 @@ class MapDemo extends ListDemo {
     //entry set 
     Set s1 = m.entrySet();
     System.out.println("entry set : " + s1);
-
+    System.out.println("----------------END--------------------");
   }
   public void linkedHashMap(){
     Map m =new LinkedHashMap();
@@ -188,7 +227,7 @@ class MapDemo extends ListDemo {
     //entry set 
     Set s1 = m.entrySet();
     System.out.println("entry set : " + s1);
-
+    System.out.println("----------------END--------------------");
   }
 
   
@@ -202,12 +241,13 @@ public class CollectionDemo {
       
       MapDemo sd = new MapDemo();
       sd.arrayListDemo();
+      sd.linkedListDemo();
       sd.hashSetDemo();
       sd.linkedHashSet();
       sd.treeSet();
       sd.hashMap();
-      sd.treeMap();
       sd.linkedHashMap();
+      sd.treeMap();
        
     }
 }
