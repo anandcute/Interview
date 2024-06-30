@@ -198,6 +198,7 @@ class MapDemo extends ListDemo {
     //value
     Collection c =m.values();
     System.out.println("values : " + c);
+
     System.out.println("size : " + m.size());
 
     //entry set 
@@ -209,6 +210,7 @@ class MapDemo extends ListDemo {
     
     System.out.println("----------------END--------------------");
   }
+
   public void treeMap(){
     Map m =new TreeMap();
     m.put(88,21);
@@ -239,7 +241,7 @@ class MapDemo extends ListDemo {
     m.put("dee",20);
     m.put("Deepak",21);
     m.put(06,"kumar");
-    System.out.println("liinkedHashmap value:"+ m);
+    System.out.println("linkedHashmap value:"+ m);
 
     //keyset
     Set s = m.keySet();
@@ -267,13 +269,13 @@ public class CollectionDemo {
       
       MapDemo sd = new MapDemo();
       // sd.arrayListDemo();
-      sd.linkedListDemo();
-      // sd.hashSetDemo();
-      // sd.linkedHashSet();
-      // sd.treeSet();
+      // sd.linkedListDemo();
+      sd.hashSetDemo();
+      sd.linkedHashSet();
+      sd.treeSet();
       // sd.hashMap();
-      //sd.linkedHashMap();
-     // sd.treeMap();
+      // sd.linkedHashMap();
+      // sd.treeMap();
        
     }
 }
