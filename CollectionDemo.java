@@ -208,7 +208,7 @@ class MapDemo extends ListDemo {
     System.out.println(m.containsKey("Anand"));
     System.out.println(m.containsValue(22));
     
-    System.out.println("----------------END--------------------");
+    System.outf.println("----------------END--------------------");
   }
 
   public void treeMap(){
@@ -270,10 +270,10 @@ public class CollectionDemo {
       MapDemo sd = new MapDemo();
       // sd.arrayListDemo();
       // sd.linkedListDemo();
-      sd.hashSetDemo();
-      sd.linkedHashSet();
-      sd.treeSet();
-      // sd.hashMap();
+      // sd.hashSetDemo();
+      // sd.linkedHashSet();
+      // sd.treeSet();
+      sd.hashMap();
       // sd.linkedHashMap();
       // sd.treeMap();
        
